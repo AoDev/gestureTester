@@ -1,0 +1,77 @@
+"#myWindow" : {
+	backgroundColor: "#666"
+},
+
+
+/* TOP BAR
+------------------------- */
+
+"#topBar" : {
+	height: "60dp",
+	width: Ti.UI.FILL,
+	top: 0,
+	left: 0,
+	borderWidth: 2,
+	borderColor: "#10dddddd",
+	zIndex : 6
+},
+
+"#showEventsOptionsBTN" : {
+	left: 15,
+	width: "20%"
+},
+
+
+"#title" : {
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+	font: {fontSize : 24},
+	color : "white",
+	left: "25%"
+},
+
+
+/* EVENTS DIALOG
+------------------------- */
+"#addRemoveEventsDialog" : {
+	backgroundColor: "#333",
+	layout : "vertical",
+	left:0,
+	width: Ti.UI.FILL,
+	zIndex: 5
+},
+
+/* TEST SURFACE
+------------------------- */
+"#testSurface" : {
+	width: Ti.UI.FILL,
+	top: 80,
+	layout: "vertical",
+	backgroundColor: "#444"
+},
+
+
+/* BOTTOM BAR
+------------------------- */
+"#bottomBar" : {
+	height: "60dp",
+	width: Ti.UI.FILL,
+	bottom:0,
+	borderWidth: "2",
+	borderColor: "#10dddddd",
+	horizontalWrap : false
+},
+
+"#eventsListLBL" : {
+	color: "white",
+	font: {fontSize : 24}
+},
+
+"#resetListButton" : {
+	left: 15
+},
+
+"#infoButton" : {
+	right: 15
+}
+
+

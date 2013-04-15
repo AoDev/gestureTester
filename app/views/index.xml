@@ -1,0 +1,88 @@
+<Alloy>
+	<Window id="myWindow">
+
+		<View id="topBar" class="gradient_vertical_grey_darkest">
+			<Button id="showEventsOptionsBTN">
+				events
+			</Button>
+			<Label id="title">Testing gestures</Label>
+		</View>
+
+		<View id="addRemoveEventsDialog">
+
+			<View class="header gradient_vertical_grey_darker">
+				<Label left="10" class="titleLBL"> Which events do you want to test?</Label>
+			</View>
+
+			<TableView height="Ti.UI.FILL">
+				<TableViewRow>
+					<Label class="menuLBL">click</Label>
+					<Switch id="setClick" value="false" onChange="updateListeners" right="5"/>
+				</TableViewRow>
+				<TableViewRow>
+					<Label class="menuLBL">dblclick</Label>
+					<Switch id="setDblclick" value="false" onChange="updateListeners" right="5"/>
+				</TableViewRow>
+				<TableViewRow>
+					<Label class="menuLBL">doubletap</Label>
+					<Switch id="setDoubletap" value="false" onChange="updateListeners" right="5"/>
+				</TableViewRow>
+				<TableViewRow>
+					<Label class="menuLBL">keypressed</Label>
+					<Switch id="setKeypressed" value="false" onChange="updateListeners" right="5"/>
+				</TableViewRow>
+				<TableViewRow>
+					<Label class="menuLBL">longclick</Label>
+					<Switch id="setLongclick" value="false" onChange="updateListeners" right="5"/>
+				</TableViewRow>
+				<TableViewRow>
+					<Label class="menuLBL">longpress</Label>
+					<Switch id="setLongpress" value="false" onChange="updateListeners" right="5"/>
+				</TableViewRow>
+				<TableViewRow>
+					<Label class="menuLBL">pinch</Label>
+					<Switch id="setPinch" value="false" onChange="updateListeners" right="5"/>
+				</TableViewRow>
+				<TableViewRow>
+					<Label class="menuLBL">singletap</Label>
+					<Switch id="setSingletap" value="false" onChange="updateListeners" right="5"/>
+				</TableViewRow>
+				<TableViewRow>
+					<Label class="menuLBL">swipe</Label>
+					<Switch id="setSwipe" value="false" onChange="updateListeners" right="5"/>
+				</TableViewRow>
+				<TableViewRow>
+					<Label class="menuLBL">touchend</Label>
+					<Switch id="setTouchend" value="false" onChange="updateListeners" right="5"/>
+				</TableViewRow>
+				<TableViewRow>
+					<Label class="menuLBL">touchmove</Label>
+					<Switch id="setTouchmove" value="false" onChange="updateListeners" right="5"/>
+				</TableViewRow>
+				<TableViewRow>
+					<Label class="menuLBL">touchstart</Label>
+					<Switch id="setTouchstart" value="false" onChange="updateListeners" right="5"/>
+				</TableViewRow>
+				<TableViewRow>
+					<Label class="menuLBL">twofingertap</Label>
+					<Switch id="setTwofingertap" value="false" onChange="updateListeners" right="5"/>
+				</TableViewRow>
+			</TableView>
+
+		</View>
+
+		<View id="testSurface">
+			<Label id="eventsListLBL"/>
+		</View>
+
+		<View id="bottomBar" class="gradient_vertical_grey_darker">
+			<Button id="resetListButton" class="button" width="33%">
+				Reset List
+			</Button>
+			<Button id="infoButton" class="button" width="33%">
+				Info
+			</Button>
+		</View>
+
+	</Window>
+</Alloy>

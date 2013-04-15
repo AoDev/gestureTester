@@ -1,0 +1,57 @@
+
+
+".buttonLBL" : {
+	color: "white",
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+	width: "90%",
+	left: "5%",
+	height: "90%",
+	left: "5%",
+	font: {fontSize : 24}
+},
+
+".gradient_vertical_grey_darker" : {
+	backgroundGradient: {
+		type:"linear",
+		startPoint:{x:'50%', y:'0%'},
+		endPoint: {x:'50%', y:'100%'},
+		colors: [
+			{ color: '#111', offset: 0.1},
+			{ color: '#555', offset: 1.0 }
+		]
+	}
+},
+
+".gradient_vertical_grey_darkest" : {
+	backgroundGradient: {
+		type:"linear",
+		startPoint:{x:'50%', y:'0%'},
+		endPoint: {x:'50%', y:'100%'},
+		colors: [
+			{ color: '#090909', offset: 0.1},
+			{ color: '#333', offset: 1.0 }
+		]
+	}
+},
+
+".header" : {
+	height: 50,
+	width: Ti.UI.FILL,
+	top:0,
+	borderWidth: "2",
+	borderColor: "#10dddddd",
+	horizontalWrap : false
+},
+
+".menuLBL" : {
+	color: "white",
+	font: {fontSize : 24},
+	height: 50,
+	top: 5,
+	left: 5
+},
+
+".titleLBL" : {
+	color: "white",
+	font: {fontSize : 24}
+}
