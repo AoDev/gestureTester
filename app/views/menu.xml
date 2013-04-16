@@ -1,0 +1,70 @@
+<Alloy>
+	<View id="container">
+
+		<View id="header" class="buttonBar">
+			<Label left="10" class="titleLBL"> Which events do you want to test?</Label>
+		</View>
+
+		<TableView id="menuTBL">
+			<TableViewRow>
+				<Label class="menuLBL">click</Label>
+				<Switch id="setClick" value="false" onChange="updateListeners"/>
+			</TableViewRow>
+			<TableViewRow>
+				<Label class="menuLBL">dblclick</Label>
+				<Switch id="setDblclick" value="false" onChange="updateListeners"/>
+			</TableViewRow>
+			<TableViewRow>
+				<Label class="menuLBL">doubletap</Label>
+				<Switch id="setDoubletap" value="false" onChange="updateListeners"/>
+			</TableViewRow>
+			<TableViewRow>
+				<Label class="menuLBL">keypressed</Label>
+				<Switch id="setKeypressed" value="false" onChange="updateListeners"/>
+			</TableViewRow>
+			<TableViewRow>
+				<Label class="menuLBL">longclick</Label>
+				<Switch id="setLongclick" value="false" onChange="updateListeners"/>
+			</TableViewRow>
+			<TableViewRow>
+				<Label class="menuLBL">longpress</Label>
+				<Switch id="setLongpress" value="false" onChange="updateListeners"/>
+			</TableViewRow>
+			<TableViewRow>
+				<Label class="menuLBL">pinch</Label>
+				<View class="right">
+					<Switch id="setScale" titleOn="scale on" titleOff="scale off" value="false" onChange="updateListeners"/>
+					<Switch id="setVelocity" titleOn="velocity on" titleOff="velocity off" value="false" onChange="updateListeners"/>
+					<Switch id="setPinch" value="false" onChange="updateListeners"/>
+				</View>
+			</TableViewRow>
+			<TableViewRow>
+				<Label class="menuLBL">singletap</Label>
+				<Switch id="setSingletap" value="false" onChange="updateListeners"/>
+			</TableViewRow>
+			<TableViewRow>
+				<Label class="menuLBL">swipe</Label>
+				<View class="right">
+					<Switch id="setDirection" titleOn="direction on" titleOff="direction off" value="false" onChange="updateListeners"/>
+					<Switch id="setSwipe" value="false" onChange="updateListeners"/>
+				</View>
+			</TableViewRow>
+			<TableViewRow>
+				<Label class="menuLBL">touchend</Label>
+				<Switch id="setTouchend" value="false" onChange="updateListeners"/>
+			</TableViewRow>
+			<TableViewRow>
+				<Label class="menuLBL">touchmove</Label>
+				<Switch id="setTouchmove" value="false" onChange="updateListeners"/>
+			</TableViewRow>
+			<TableViewRow>
+				<Label class="menuLBL">touchstart</Label>
+				<Switch id="setTouchstart" value="false" onChange="updateListeners"/>
+			</TableViewRow>
+			<TableViewRow>
+				<Label class="menuLBL">twofingertap</Label>
+				<Switch id="setTwofingertap" value="false" onChange="updateListeners"/>
+			</TableViewRow>
+		</TableView>
+	</View>
+</Alloy>

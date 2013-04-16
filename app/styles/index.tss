@@ -3,48 +3,42 @@
 },
 
 
-/* TOP BAR
+/* Header
 ------------------------- */
 
-"#topBar" : {
+"#header" : {
 	height: "60dp",
 	width: Ti.UI.FILL,
 	top: 0,
-	left: 0,
-	borderWidth: 2,
-	borderColor: "#10dddddd",
-	zIndex : 6
+	left: 0
 },
 
 "#showEventsOptionsBTN" : {
-	left: 15,
-	width: "20%"
+	right: "2dp"
 },
 
 
 "#title" : {
 	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
-	font: {fontSize : 24},
+	font: {fontSize : "20sp"},
 	color : "white",
-	left: "25%"
+	left: "2dp"
 },
 
 
-/* EVENTS DIALOG
-------------------------- */
-"#addRemoveEventsDialog" : {
-	backgroundColor: "#333",
-	layout : "vertical",
-	left:0,
-	width: Ti.UI.FILL,
-	zIndex: 5
+"#content" : {
+	top: "60dp",
+	height: Ti.UI.FILL,
+	width: Ti.UI.FILL
 },
+
 
 /* TEST SURFACE
 ------------------------- */
 "#testSurface" : {
+	bottom: "60dp",
+	height: Ti.UI.FILL,
 	width: Ti.UI.FILL,
-	top: 80,
 	layout: "vertical",
 	backgroundColor: "#444"
 },
@@ -53,25 +47,23 @@
 /* BOTTOM BAR
 ------------------------- */
 "#bottomBar" : {
-	height: "60dp",
+	bottom: 0,
 	width: Ti.UI.FILL,
-	bottom:0,
-	borderWidth: "2",
-	borderColor: "#10dddddd",
+	height: "60dp",
 	horizontalWrap : false
 },
 
 "#eventsListLBL" : {
 	color: "white",
-	font: {fontSize : 24}
+	font: {fontSize : "16sp"}
 },
 
 "#resetListButton" : {
-	left: 15
+	left: "5dp"
 },
 
 "#infoButton" : {
-	right: 15
+	right: "5dp"
 }
 
 

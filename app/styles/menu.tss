@@ -1,0 +1,35 @@
+
+
+/* EVENTS DIALOG
+------------------------- */
+
+"#container" : {
+	top: "60dp",
+	left: 0,
+	backgroundColor: "#333",
+},
+
+"#header" : {
+	top: 0,
+	left: 0
+},
+
+".menuLBL" : {
+	font: {fontSize : "18sp"}
+},
+
+"#menuTBL" : {
+	top: "60dp",
+	height: Ti.UI.FILL,
+	width: Ti.UI.FILL
+},
+
+"Switch" : {
+	right: "2dp"
+},
+
+".right" : {
+	layout: "horizontal",
+	right: 0,
+	width: Ti.UI.SIZE
+}

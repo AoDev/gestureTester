@@ -9,3 +9,12 @@
 // object. For example:
 //
 // Alloy.Globals.someGlobalFunction = function(){};
+
+
+var APP = {};
+
+APP.device = {
+	height : Ti.Platform.displayCaps.platformHeight,
+	width : Ti.Platform.displayCaps.platformWidth,
+	retina : (Ti.Platform.displayCaps.density == "high") ? true : false
+}

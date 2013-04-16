@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ti:app xmlns:ti="http://ti.appcelerator.org">
-    <id>com.nokturnalapp.gesturestest</id>
+    <id>com.nokturnalapp.gesturetester</id>
     <name>GesturesTester</name>
     <version>1.0</version>
     <publisher>Kevin Purnelle</publisher>
@@ -28,7 +28,15 @@
             <orientation>Ti.UI.LANDSCAPE_RIGHT</orientation>
         </orientations>
     </iphone>
-    <android xmlns:android="http://schemas.android.com/apk/res/android"/>
+    <android xmlns:android="http://schemas.android.com/apk/res/android">
+        <tool-api-level>15</tool-api-level>
+        <manifest>
+            <uses-sdk android:minSdkVersion="15"/>
+            <application android:hardwareAccelerated="true">
+                <activity android:name=".MyappActivity" android:theme="@android:style/Theme.Holo.Wallpaper.NoTitleBar"></activity>
+            </application>
+        </manifest>
+    </android>
     <mobileweb>
         <precache/>
         <splash>
@@ -47,7 +55,7 @@
         <target device="iphone">true</target>
         <target device="mobileweb">false</target>
     </deployment-targets>
-    <sdk-version>3.0.0.GA</sdk-version>
+    <sdk-version>3.0.2.GA</sdk-version>
     <plugins>
         <plugin version="1.0">ti.alloy</plugin>
     </plugins>
